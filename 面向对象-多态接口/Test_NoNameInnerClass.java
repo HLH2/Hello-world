@@ -1,9 +1,9 @@
 class Test_NoNameInnerClass {
 	public static void main(String[] args) {
-		Outher o = new Outher();      //´´½¨¸¸Àà¶ÔÏó
-        o.method(new person() {   //¸ü¸ÄÖµÎªÎŞÃû¾Ö²¿ÄÚ²¿Àà
-            public void Test() {     //ÒòÎª´ËÀàÎªabstractËùĞŞÊÎµÄ³éÏóÀà£¬ËùÒÔ±ØĞëÖØĞ´ÒÔabstract¶¨ÒåµÄ³éÏó·½·¨
-                System.out.println("Test method");
+		Outher o = new Outher();      //åˆ›å»ºçˆ¶ç±»å¯¹è±¡
+        	o.method(new person() {   //æ›´æ”¹å€¼ä¸ºæ— åå±€éƒ¨å†…éƒ¨ç±»
+            	    public void Test() {     //å› ä¸ºæ­¤ç±»ä¸ºabstractæ‰€ä¿®é¥°çš„æŠ½è±¡ç±»ï¼Œæ‰€ä»¥å¿…é¡»é‡å†™ä»¥abstractå®šä¹‰çš„æŠ½è±¡æ–¹æ³•
+               	        System.out.println("Test method");
             }
         });
 	}
@@ -14,7 +14,7 @@ abstract class person {
 }
 
 class Outher {
-    public void method(person p) {  //Ê¹ÓÃ¸¸ÀàÒıÓÃ×ÓÀà¶ÔÏó
+    public void method(person p) {  //ä½¿ç”¨çˆ¶ç±»å¼•ç”¨å­ç±»å¯¹è±¡
         p.Test();
     }
 }
