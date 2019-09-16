@@ -1,7 +1,7 @@
 public class Dome_NoNameInnerClass {
 	public static void main(String[] args) {
 		Outer o = new Outer();
-        o.method();
+        	o.method();
 	}
 }
 
@@ -13,16 +13,16 @@ interface inter {
 class Outer {
     //class inner implements inter {
         //public void print() {
-         //   System.out.println("类");
+         //   System.out.println("脌脿");
         //}
     public void method() {
         //new inner().print();
         new inter() {   
             public void print() {
-                System.out.println("接口");
+                System.out.println("陆脫驴脷");
             }
             public void print1() {
-                System.out.println("接口11");
+                System.out.println("陆脫驴脷11");
             }
             public void show() {
                 print();
